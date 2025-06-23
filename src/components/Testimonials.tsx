@@ -3,40 +3,40 @@ import { Container, Row, Col, Card, Badge } from 'react-bootstrap'
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Marie Dubois",
-      role: "CEO, TechFlow",
-      company: "Startup SaaS B2B",
+      name: "Marie Ngono",
+      role: "CEO, TechCamer",
+      company: "Startup FinTech",
       image: "👩‍💼",
-      content: "Grâce à Startup Academy, j'ai pu lever 1,2M€ en seulement 6 mois. L'accompagnement personnalisé et le réseau d'investisseurs sont exceptionnels.",
+      content: "Grâce à Startup Academy, j'ai pu lever 500 millions FCFA en seulement 8 mois. L'accompagnement personnalisé et le réseau d'investisseurs camerounais sont exceptionnels.",
       rating: 5,
-      metrics: "1,2M€ levés"
+      metrics: "500M FCFA levés"
     },
     {
-      name: "Thomas Martin",
-      role: "Fondateur, EcoTech",
-      company: "CleanTech",
+      name: "Thomas Mbarga",
+      role: "Fondateur, EcoTech Cameroun",
+      company: "AgriTech",
       image: "👨‍💻",
-      content: "L'expertise technique et business de l'équipe m'a permis de développer un MVP solide et de trouver mes premiers clients rapidement.",
+      content: "L'expertise technique et business de l'équipe m'a permis de développer un MVP adapté au marché camerounais et de trouver mes premiers clients à Douala et Yaoundé.",
       rating: 5,
-      metrics: "500K€ ARR"
+      metrics: "150M FCFA ARR"
     },
     {
-      name: "Sophie Leroy",
-      role: "Co-fondatrice, HealthApp",
-      company: "MedTech",
+      name: "Sophie Atangana",
+      role: "Co-fondatrice, HealthApp CM",
+      company: "HealthTech",
       image: "👩‍⚕️",
-      content: "Le mentorat et les formations m'ont donné la confiance nécessaire pour piloter une équipe de 15 personnes. Startup Academy a changé ma vie !",
+      content: "Le mentorat et les formations m'ont donné la confiance nécessaire pour piloter une équipe de 25 personnes. Startup Academy a transformé ma vision entrepreneuriale !",
       rating: 5,
-      metrics: "15 employés"
+      metrics: "25 employés"
     },
     {
-      name: "Alexandre Chen",
-      role: "CEO, FoodTech Pro",
+      name: "Alexandre Fouda",
+      role: "CEO, FoodTech Pro CM",
       company: "FoodTech",
       image: "👨‍🍳",
-      content: "Leur approche méthodique et leurs outils m'ont aidé à structurer mon business model et à scaler rapidement sur 3 pays européens.",
+      content: "Leur approche méthodique et leurs outils m'ont aidé à structurer mon business model et à scaler rapidement sur 5 villes du Cameroun et 2 pays de la CEMAC.",
       rating: 5,
-      metrics: "3 pays"
+      metrics: "5 villes + 2 pays"
     }
   ]
 
@@ -47,10 +47,10 @@ const Testimonials = () => {
         <div className="text-center mb-5">
           <div className="text-primary-custom fw-semibold fs-5 mb-2 fade-in-down">Témoignages</div>
           <h2 className="display-4 fw-bold mb-4 text-white fade-in-up delay-1">
-            Ce que disent nos entrepreneurs
+            Ce que disent nos entrepreneurs camerounais
           </h2>
           <p className="lead mx-auto text-white fade-in-up delay-2" style={{ maxWidth: '600px', opacity: '0.8' }}>
-            Découvrez comment Startup Academy a transformé la vie de centaines d'entrepreneurs à travers la France.
+            Découvrez comment Startup Academy a transformé la vie de centaines d'entrepreneurs à travers le Cameroun.
           </p>
         </div>
 
@@ -121,25 +121,25 @@ const Testimonials = () => {
             <Row className="g-4 text-center">
               <Col md={3}>
                 <div className="fade-in-up delay-1">
-                  <div className="display-4 fw-bold mb-2 text-primary-custom stat-number">500+</div>
+                  <div className="display-4 fw-bold mb-2 text-primary-custom stat-number">200+</div>
                   <div className="text-white" style={{ opacity: '0.8' }}>Startups accompagnées</div>
                 </div>
               </Col>
               <Col md={3}>
                 <div className="fade-in-up delay-2">
-                  <div className="display-4 fw-bold mb-2 text-primary-custom stat-number">95%</div>
+                  <div className="display-4 fw-bold mb-2 text-primary-custom stat-number">92%</div>
                   <div className="text-white" style={{ opacity: '0.8' }}>Taux de satisfaction</div>
                 </div>
               </Col>
               <Col md={3}>
                 <div className="fade-in-up delay-3">
-                  <div className="display-4 fw-bold mb-2 text-primary-custom stat-number">€50M+</div>
+                  <div className="display-4 fw-bold mb-2 text-primary-custom stat-number">15M+ FCFA</div>
                   <div className="text-white" style={{ opacity: '0.8' }}>Fonds levés</div>
                 </div>
               </Col>
               <Col md={3}>
                 <div className="fade-in-up delay-4">
-                  <div className="display-4 fw-bold mb-2 text-primary-custom stat-number">4.9/5</div>
+                  <div className="display-4 fw-bold mb-2 text-primary-custom stat-number">4.8/5</div>
                   <div className="text-white" style={{ opacity: '0.8' }}>Note moyenne</div>
                 </div>
               </Col>

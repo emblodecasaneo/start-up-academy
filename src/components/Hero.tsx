@@ -11,7 +11,7 @@ const Hero = () => {
               Transformez votre idée en <span className="text-gradient">startup à succès</span>
             </h1>
             <p className="lead fs-3 mb-5 mx-auto" style={{ maxWidth: '700px', opacity: '0.9' }}>
-              Rejoignez l'académie #1 en France pour entrepreneurs ambitieux. 
+              Rejoignez l'académie #1 au Cameroun pour entrepreneurs ambitieux. 
               Formation, mentorat et financement pour concrétiser vos projets.
             </p>
             
@@ -30,7 +30,7 @@ const Hero = () => {
             <Col md={3}>
               <Card className="card-custom text-center">
                 <Card.Body>
-                  <div className="display-4 fw-bold text-primary-custom mb-2">500+</div>
+                  <div className="display-4 fw-bold text-primary-custom mb-2">200+</div>
                   <div className="text-white">Startups lancées</div>
                 </Card.Body>
               </Card>
@@ -38,7 +38,7 @@ const Hero = () => {
             <Col md={3}>
               <Card className="card-custom text-center">
                 <Card.Body>
-                  <div className="display-4 fw-bold text-primary-custom mb-2">€50M+</div>
+                  <div className="display-4 fw-bold text-primary-custom mb-2">15M+ FCFA</div>
                   <div className="text-white">Fonds levés</div>
                 </Card.Body>
               </Card>
@@ -46,7 +46,7 @@ const Hero = () => {
             <Col md={3}>
               <Card className="card-custom text-center">
                 <Card.Body>
-                  <div className="display-4 fw-bold text-primary-custom mb-2">95%</div>
+                  <div className="display-4 fw-bold text-primary-custom mb-2">85%</div>
                   <div className="text-white">Taux de succès</div>
                 </Card.Body>
               </Card>
