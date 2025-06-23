@@ -471,6 +471,15 @@ html {
   transition: all 0.3s ease;
 }
 
+.navbar-dark .navbar-brand img {
+  transition: all 0.3s ease;
+  filter: brightness(1.2);
+}
+
+.navbar-dark .navbar-brand:hover img {
+  filter: brightness(1.4) drop-shadow(0 0 10px rgba(251, 191, 36, 0.5));
+}
+
 .navbar-toggler {
   border: none !important;
   padding: 4px 8px;

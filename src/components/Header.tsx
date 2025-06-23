@@ -16,7 +16,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sections = navItems.map(item => item.id)
-      const scrollPosition = window.scrollY + 100 // Offset pour le header fixe
+      const scrollPosition = window.scrollY + 100
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = document.getElementById(sections[i])
@@ -31,14 +31,13 @@ const Header = () => {
         }
       }
 
-      // Si on est tout en haut, activer home
       if (window.scrollY < 100) {
         setActiveSection('home')
       }
     }
 
     window.addEventListener('scroll', handleScroll)
-    handleScroll() // Appel initial
+    handleScroll()
 
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
@@ -47,7 +46,6 @@ const Header = () => {
     setActiveSection(sectionId)
     setExpanded(false)
     
-    // Smooth scroll vers la section
     const element = document.querySelector(href)
     if (element) {
       const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 80
@@ -66,10 +64,20 @@ const Header = () => {
       <Container>
         <Navbar.Brand 
           href="#home" 
-          className="fw-bold fs-3 text-primary-custom fade-in-down"
+          className="fw-bold fs-3 text-primary-custom fade-in-down d-flex align-items-center"
           onClick={() => handleNavClick('#home', 'home')}
         >
-          <span className="float-animation">🚀</span> Startup Academy
+          <img 
+            src="/startup.png" 
+            alt="Startup Academy Logo" 
+            className="me-2 float-animation"
+            style={{ 
+              width: '40px', 
+              height: '40px',
+              objectFit: 'contain'
+            }}
+          />
+          Startup Academy
         </Navbar.Brand>
         
         <Navbar.Toggle 
@@ -96,7 +104,7 @@ const Header = () => {
                   style={{
                     transition: 'all 0.3s ease',
                     transform: activeSection === item.id ? 'translateY(-2px)' : 'translateY(0)'
-                  } as React.CSSProperties}
+                  }}
                 >
                   {item.label}
                 </Nav.Link>
@@ -109,7 +117,7 @@ const Header = () => {
                       height: '2px',
                       background: 'linear-gradient(135deg, var(--primary-color), var(--primary-dark))',
                       borderRadius: '2px'
-                    } as React.CSSProperties}
+                    }}
                   />
                 )}
               </div>
