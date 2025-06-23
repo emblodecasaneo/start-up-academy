@@ -1,4 +1,4 @@
-import { Container, Row, Col, Button, Badge, Card } from 'react-bootstrap'
+import { Container, Row, Col, Button, Card } from 'react-bootstrap'
 
 const Hero = () => {
   return (

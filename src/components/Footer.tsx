@@ -1,49 +1,38 @@
-import { Container, Row, Col, Form, Button, InputGroup } from 'react-bootstrap'
+import { Container, Row, Col, Button, Form } from 'react-bootstrap'
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear()
-
   const footerSections = [
     {
-      title: "Services",
+      title: "Programmes",
       links: [
-        { name: "Accompagnement Startup", href: "#services" },
-        { name: "Levée de Fonds", href: "#services" },
-        { name: "Formation", href: "#services" },
-        { name: "Mentorat", href: "#services" }
+        { name: "Formation Startup", href: "#" },
+        { name: "Mentorat", href: "#" },
+        { name: "Financement", href: "#" },
+        { name: "Incubation", href: "#" }
       ]
     },
     {
       title: "Ressources",
       links: [
         { name: "Blog", href: "#" },
-        { name: "Guides", href: "#" },
+        { name: "Podcast", href: "#" },
         { name: "Webinaires", href: "#" },
-        { name: "Success Stories", href: "#testimonials" }
-      ]
-    },
-    {
-      title: "Entreprise",
-      links: [
-        { name: "À propos", href: "#about" },
-        { name: "Équipe", href: "#" },
-        { name: "Carrières", href: "#" },
-        { name: "Presse", href: "#" }
+        { name: "Templates", href: "#" }
       ]
     },
     {
       title: "Support",
       links: [
-        { name: "Contact", href: "#contact" },
+        { name: "Centre d'aide", href: "#" },
+        { name: "Contact", href: "#" },
         { name: "FAQ", href: "#" },
-        { name: "Documentation", href: "#" },
-        { name: "Support", href: "#" }
+        { name: "Communauté", href: "#" }
       ]
     }
   ]
 
   const socialLinks = [
-    { name: "LinkedIn", href: "#", icon: "🔗" },
+    { name: "LinkedIn", href: "#", icon: "💼" },
     { name: "Twitter", href: "#", icon: "🐦" },
     { name: "Facebook", href: "#", icon: "📘" },
     { name: "Instagram", href: "#", icon: "📷" }
